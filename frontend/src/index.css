@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-slate-900 font-sans antialiased;
+  }
+
+  a {
+    @apply text-primary hover:text-emergency transition-colors;
+  }
+}
+
+@layer components {
+  .page-section {
+    @apply px-6 py-16 md:px-10 lg:px-20;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md shadow-soft;
+  }
+}
+
+/* Force Leaflet maps to stay below header */
+.leaflet-container,
+.leaflet-pane,
+.leaflet-tile-pane,
+.leaflet-overlay-pane,
+.leaflet-shadow-pane,
+.leaflet-marker-pane,
+.leaflet-tooltip-pane,
+.leaflet-popup-pane,
+.leaflet-map-pane,
+.leaflet-control-container,
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 1 !important;
+}
+
