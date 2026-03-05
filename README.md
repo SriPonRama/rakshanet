@@ -328,20 +328,6 @@ Create test users with different roles:
 
 ### Environment Variables (Production)
 
-**Backend (.env):**
-```env
-PORT=5000
-MONGO_URI=mongodb+srv://user:pass@cluster.mongodb.net/rakshanet
-JWT_SECRET=your-production-secret-key-min-32-chars
-CLIENT_ORIGIN=https://your-frontend-domain.com
-AI_SERVICE_URL=https://your-ai-service-domain.com
-NODE_ENV=production
-```
-
-**Frontend (.env):**
-```env
-VITE_API_URL=https://your-backend-domain.com/api
-```
 
 ### Build Commands
 
