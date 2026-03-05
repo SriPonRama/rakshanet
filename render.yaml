@@ -10,7 +10,7 @@ services:
       - key: NODE_ENV
         value: production
       - key: MONGO_URI
-        value: mongodb+srv://sriponrama:root@sriponrama.ljyarxj.mongodb.net/rakshanet
+       
       - key: JWT_SECRET
         generateValue: true
       - key: CLIENT_ORIGIN
